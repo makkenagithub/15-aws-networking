@@ -19,6 +19,20 @@ autoscaling group - target group arn, launch template id, desired, min and max i
 <img width="538" height="208" alt="image" src="https://github.com/user-attachments/assets/d12e1a59-98af-43b6-84ed-1ada51a31b53" />
 
 
+VPC Peering:
+
+VPC peering can be done between VPCs in different regions and they can communicate with each other with private IPs.
+After creating perring connection, add the routes from subnets route tables in each vpc to destination cidr range of other vpc with peering ID.
+
+<img width="535" height="328" alt="image" src="https://github.com/user-attachments/assets/2fe94586-ca23-4efa-9a17-f0f3da2e2f9e" />
+
+<img width="386" height="251" alt="image" src="https://github.com/user-attachments/assets/b301d6fe-53c9-492c-b65c-8cc2804156c0" />
+
+Only 2 VPCs can be peered at a time. 3rd VPC can't be peered. Thats the limitation.
+
+
+
+
 
 
 
