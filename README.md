@@ -16,4 +16,10 @@ target group - vpc id, port(application port), health check
 
 autoscaling group - target group arn, launch template id, desired, min and max instances.
 
+<img width="538" height="208" alt="image" src="https://github.com/user-attachments/assets/d12e1a59-98af-43b6-84ed-1ada51a31b53" />
+
+
+
+
+
 
