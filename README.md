@@ -155,14 +155,35 @@ Now goto cloudwatch and create log group
 <img width="418" height="125" alt="image" src="https://github.com/user-attachments/assets/8a474fd2-6622-4a8e-89b2-4665382299c9" />
 
 
-Now VPC needs to send logs to cloudwatch log group. FOr that we need IAM roles/policy permissions
+Now VPC needs to send logs to cloudwatch log group. FOr that we need IAM roles/policy permissions. Here they created some custom role and attached a custom policy to the role. WHich is something like create / write logs to clougwatch log group.
 
 <img width="475" height="295" alt="image" src="https://github.com/user-attachments/assets/6cf9cc24-29b5-4a8a-a42f-45e94c080028" />
 
+
+<img width="409" height="176" alt="image" src="https://github.com/user-attachments/assets/f5d74838-6812-4708-b0fe-1c131483307a" />
+
+
+
 VPC sends the logs to log gorup through NETWORK INTERFACE.
 
+Now goto VPC and click on Flow logs -> create flow logs
+
+<img width="551" height="261" alt="image" src="https://github.com/user-attachments/assets/b1bd0c5e-6d1a-4712-8b53-ef3e84648fe3" />
+
+<img width="542" height="296" alt="image" src="https://github.com/user-attachments/assets/ab368cb6-f9a5-4630-9d7f-fa4a230cb223" />
+
+<img width="549" height="269" alt="image" src="https://github.com/user-attachments/assets/1f52ca6c-7afb-48b1-b963-923611bf8df9" />
+
+Now goto log group we created above and click on Log streams and see eni (elastic network interface), which is responsible to write logs to the log group. Then click on eni and see some logs
+
+<img width="552" height="287" alt="image" src="https://github.com/user-attachments/assets/b39d78a3-5e9f-488c-9004-cc9aca62f0e8" />
+
+<img width="554" height="254" alt="image" src="https://github.com/user-attachments/assets/39339c60-270a-45f4-809a-bb61c512a5f8" />
 
 
+Now goto EC2 in the VPC and click on ec2 id -> Networking  and see the Network Interfaces
+
+<img width="548" height="239" alt="image" src="https://github.com/user-attachments/assets/b699d2c4-d241-4409-894d-dfdc88cb83bf" />
 
 
 
