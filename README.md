@@ -65,7 +65,7 @@ Then create an EC2 in each VPC and ping the EC2 in other VPCs.
 
 ### Transit gateway peering - Cross region peering
 
-Here VPCs in different regions can connect using tarnsit gateway peering connection. Here we need to transit gateways in two regions.
+Here VPCs in different regions can connect using tarnsit gateway peering connection. Here we need to create transit gateways in two regions.
 
 <img width="457" height="295" alt="image" src="https://github.com/user-attachments/assets/a8b37145-549e-495d-b3a8-8d1d3cba658c" />
 
@@ -96,7 +96,13 @@ Stockholm:
 
 <img width="457" height="207" alt="image" src="https://github.com/user-attachments/assets/6ad725c5-b305-4aec-8087-6415529d58e1" />
 
-Update all Route tables:
+
+Update all Route tables: 
+
+update the route tables for each route with the transit gateway ID of that region and give the CIDR of other region VPC
+
+<img width="554" height="253" alt="image" src="https://github.com/user-attachments/assets/ff9c3464-59ed-4fa3-8116-de37bcd6ca02" />
+
 
 
 
