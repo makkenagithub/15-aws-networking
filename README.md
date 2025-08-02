@@ -55,7 +55,7 @@ Transit gateway attachment to 3 VPCs: Choose attachment type as VPC.
 <img width="548" height="172" alt="image" src="https://github.com/user-attachments/assets/9cc54121-43b8-4a07-aa14-b5c2569dcbef" />
 
 
-Update Route tables with transit gateway attchemnet:
+Update all Route tables with transit gateway id:
 
 Each VPC has multiple sibnets. Update routes of each subnet route table in a VPC with the other two VPC CIDR and use transit gateway ID here while adding route. For example, 
 
@@ -96,7 +96,7 @@ Stockholm:
 
 <img width="457" height="207" alt="image" src="https://github.com/user-attachments/assets/6ad725c5-b305-4aec-8087-6415529d58e1" />
 
-Update Route tables:
+Update all Route tables:
 
 
 
