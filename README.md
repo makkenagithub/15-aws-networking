@@ -186,6 +186,35 @@ Now goto EC2 in the VPC and click on ec2 id -> Networking  and see the Network I
 <img width="548" height="239" alt="image" src="https://github.com/user-attachments/assets/b699d2c4-d241-4409-894d-dfdc88cb83bf" />
 
 
+### Network Loab balancer :
+
+nlb works on layer 4. And alb works on layer 7.
+
+<img width="530" height="302" alt="image" src="https://github.com/user-attachments/assets/43ba4930-f145-4e70-be3a-65c3af68140f" />
+
+
+nlb vs alb:
+
+1. nlb works on TCP/UDP while alb works on http/https.
+2. nlb does not support path based routing , it suppprts only a url. alb supports path based routing.
+3. nlb is useful when there is for high traffic with low latency. So nlb is used especially when we need low latency and handles high traffic.
+
+<img width="512" height="217" alt="image" src="https://github.com/user-attachments/assets/5d6b6f78-5319-4b27-804b-cf9fc8bacfef" />
+
+
+While setting up the target group for NLB, choose TCP as NLB works on TCP/UDP.
+
+<img width="551" height="259" alt="image" src="https://github.com/user-attachments/assets/b24e6d0a-783d-48a6-b46a-7201b7ee3aaa" />
+
+create NLB: choose nlb here
+
+<img width="552" height="280" alt="image" src="https://github.com/user-attachments/assets/4b2de947-ac6b-4e02-8159-9745d7d47779" />
+
+
+<img width="548" height="278" alt="image" src="https://github.com/user-attachments/assets/c67eb5c2-d1ed-493a-a0f4-03b63af0121f" />
+
+
+### Gateway load balancer glb:
 
 
 
