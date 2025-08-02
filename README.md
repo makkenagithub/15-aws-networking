@@ -99,9 +99,47 @@ Stockholm:
 
 Update all Route tables: 
 
-update the route tables for each route with the transit gateway ID of that region and give the CIDR of other region VPC
+update all the route tables with the transit gateway ID of that region and give the CIDR of other region VPC
 
 <img width="554" height="253" alt="image" src="https://github.com/user-attachments/assets/ff9c3464-59ed-4fa3-8116-de37bcd6ca02" />
+
+
+<img width="533" height="200" alt="image" src="https://github.com/user-attachments/assets/e965eeef-7a2b-48da-b5d3-a329d74a4f9a" />
+
+
+### VPC endpoint
+
+VPC endpoint can be used to flow the traffic internally in AWS an not through internet. For eg, assume we have an S3 bucket in our AWS account. 
+And We have EC2 in private subnets. Now if we want ec2 in private subnet to access S3, then ec2 needs to access S3 through internet (may be NAT gateway - I assume). So the flow is going through externally through internet. Even an EC2 in public subnet access the S3 with internet gateway and flow is external.
+
+TO make the flow internally i.e.e not goting through internet, then we can use VPC endpoint. VPC end point notonly to access S3 internally, any other AWS respource which can be access thorigh internet, then we can make use of VPC end point so that the traffoc flow is private.
+
+
+<img width="485" height="317" alt="image" src="https://github.com/user-attachments/assets/9ba5b515-630b-4566-8274-c80834649746" />
+
+
+<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/08a8f04c-a4a9-4e5d-982d-9de03c6b6d85" />
+
+
+<img width="541" height="257" alt="image" src="https://github.com/user-attachments/assets/a4b65c8d-1f8f-4ca2-80ee-92b09fb0983c" />
+
+
+
+type S3 and choose. Then choose gateway endpoint, VPC. Then choose the subnet route tables from which we need to access the endpoint. 
+
+<img width="548" height="234" alt="image" src="https://github.com/user-attachments/assets/ed355d14-3401-42a0-bbf3-c4973512b3b1" />
+
+<img width="553" height="278" alt="image" src="https://github.com/user-attachments/assets/054db97d-4512-4b4a-adeb-15dc3485a66f" />
+
+<img width="470" height="271" alt="image" src="https://github.com/user-attachments/assets/235e0a58-25a2-4918-b88b-8e56525a8813" />
+
+<img width="554" height="278" alt="image" src="https://github.com/user-attachments/assets/640dddfc-650c-4921-be01-beaba5e21241" />
+
+
+Then login to EC2 and run some aws s3 commands
+
+<img width="469" height="185" alt="image" src="https://github.com/user-attachments/assets/299044f8-291c-4bbe-b91a-5d034e88b154" />
+
 
 
 
