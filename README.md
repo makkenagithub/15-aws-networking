@@ -48,7 +48,7 @@ Then click on transit gateway and create it
 
 <img width="557" height="191" alt="image" src="https://github.com/user-attachments/assets/a09da38d-44ee-4213-8157-1c85c589714f" />
 
-Transit gateway attachment to 3 VPCs:
+Transit gateway attachment to 3 VPCs: Choose attachment type as VPC.
 
 <img width="562" height="148" alt="image" src="https://github.com/user-attachments/assets/679d7757-8e6d-4975-ab4c-09df938471ef" />
 
@@ -67,15 +67,37 @@ Then create an EC2 in each VPC and ping the EC2 in other VPCs.
 
 Here VPCs in different regions can connect using tarnsit gateway peering connection. Here we need to transit gateways in two regions.
 
-<img width="461" height="299" alt="image" src="https://github.com/user-attachments/assets/11291947-7bfb-48ea-bb8f-8d8c2a6ab4c7" />
+<img width="457" height="295" alt="image" src="https://github.com/user-attachments/assets/a8b37145-549e-495d-b3a8-8d1d3cba658c" />
 
-In transit gateway attachment choose peering connection instaed of VPC (as we did in previos case), then choose the region and give the transit gateway ID of other region
+
+Transit gateway attchemnt for peering:
+
+In transit gateway attachment type choose peering connection instaed of VPC (as we did in previos case), then choose the region and give the transit gateway ID of other region
 
 <img width="572" height="275" alt="image" src="https://github.com/user-attachments/assets/5bd27bd9-ea6d-4469-a12c-1f54c6d8536d" />
 
 <img width="548" height="214" alt="image" src="https://github.com/user-attachments/assets/f919af53-bc1f-4196-843e-348f222498c3" />
 
 <img width="404" height="170" alt="image" src="https://github.com/user-attachments/assets/478b5023-7fb5-4d0e-aded-477d26001c10" />
+
+Then accept the transit gateway attchment request in other region. Now Both transit gateways are peered with transit gateway attchement.
+
+Transit gateway attachment to VPC: Choose attachment type as VPC. We do in individual regions.
+
+Frankfurt:
+<img width="469" height="258" alt="image" src="https://github.com/user-attachments/assets/b0fa194d-c299-42d0-aad2-c245f843a327" />
+
+
+Stockholm:
+<img width="515" height="263" alt="image" src="https://github.com/user-attachments/assets/57efe2f0-a00b-4ae5-a255-e3e16d9d65dc" />
+
+
+<img width="457" height="184" alt="image" src="https://github.com/user-attachments/assets/a82ec05a-5103-4ddd-940a-3e6d196265d9" />
+
+<img width="457" height="207" alt="image" src="https://github.com/user-attachments/assets/6ad725c5-b305-4aec-8087-6415529d58e1" />
+
+Update Route tables:
+
 
 
 
