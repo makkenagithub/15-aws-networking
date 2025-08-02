@@ -141,9 +141,25 @@ Then login to EC2 and run some aws s3 commands
 <img width="469" height="185" alt="image" src="https://github.com/user-attachments/assets/299044f8-291c-4bbe-b91a-5d034e88b154" />
 
 
+### VPC flow logs
+Create a VPC with public, private subnets, internet gateway, route tables and association to subnets. Then create an EC2 in public subnet
+
+<img width="499" height="299" alt="image" src="https://github.com/user-attachments/assets/7e62f126-900c-4fcb-9df9-7f3395a40144" />
 
 
+Now goto cloudwatch and create log group
 
+<img width="536" height="215" alt="image" src="https://github.com/user-attachments/assets/abdedcee-d639-41e4-ba0b-b06e8e829506" />
+
+
+<img width="418" height="125" alt="image" src="https://github.com/user-attachments/assets/8a474fd2-6622-4a8e-89b2-4665382299c9" />
+
+
+Now VPC needs to send logs to cloudwatch log group. FOr that we need IAM roles/policy permissions
+
+<img width="475" height="295" alt="image" src="https://github.com/user-attachments/assets/6cf9cc24-29b5-4a8a-a42f-45e94c080028" />
+
+VPC sends the logs to log gorup through NETWORK INTERFACE.
 
 
 
