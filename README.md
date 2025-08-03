@@ -244,6 +244,8 @@ EC2 in cource VPC -> route table -> vpc end point -> vpc endpoint service -> glb
 <img width="521" height="304" alt="image" src="https://github.com/user-attachments/assets/db823de2-78a5-4424-8b19-f2762332eba5" />
 
 
+VPC endpoint service:
+
 <img width="584" height="304" alt="image" src="https://github.com/user-attachments/assets/aa701082-9e2c-4747-b471-2d589140ecd7" />
 
 
@@ -252,6 +254,19 @@ EC2 in cource VPC -> route table -> vpc end point -> vpc endpoint service -> glb
 cross region also supported.
 
 <img width="544" height="203" alt="image" src="https://github.com/user-attachments/assets/b64594d3-02d8-42a7-97ee-03e737956998" />
+
+
+VPC Endpoint :
+
+<img width="550" height="212" alt="image" src="https://github.com/user-attachments/assets/e1bdb211-8e18-45d9-ab8d-a0a2af238ee2" />
+
+<img width="521" height="240" alt="image" src="https://github.com/user-attachments/assets/6920c5f7-d31f-4ac0-8e99-ad9e8e6bff7e" />
+
+Provide the vpc endpoint service name here and verify. Then select the course VPC 
+
+<img width="474" height="130" alt="image" src="https://github.com/user-attachments/assets/2155ff3a-2186-4b36-9b86-5f48e8be6709" />
+
+
 
 
 
