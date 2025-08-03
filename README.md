@@ -296,8 +296,53 @@ sudo tcpdump -nvv 'port 6081'
 <img width="531" height="300" alt="image" src="https://github.com/user-attachments/assets/9a8d9342-67f3-4c62-9bd9-96fc4996d7dc" />
 
 
+We create a VPC and its compoenents subnets route tables etc. Adn then create an ALB with target group of an ec2 instance in the subnet. 
 
 
+<img width="545" height="275" alt="image" src="https://github.com/user-attachments/assets/1ece923e-e895-4ceb-9723-ad11eacb231d" />
+
+Initially create IP sets and provide IPs which needs to be blocked. We will give IP sets while creating WAF.
+
+<img width="307" height="259" alt="image" src="https://github.com/user-attachments/assets/f2e00de3-1a0e-4218-9ba8-1591ad48a515" />
+
+Here we gave our laptop IP
+<img width="129" height="62" alt="image" src="https://github.com/user-attachments/assets/63c51d80-3964-435f-a570-2f56c3496582" />
+
+
+
+click on web ACL and see region comes as global. Choose region here, create web ACL 
+
+
+<img width="535" height="261" alt="image" src="https://github.com/user-attachments/assets/52e87e8a-bda1-4419-aee7-642b2b32d845" />
+
+
+<img width="509" height="256" alt="image" src="https://github.com/user-attachments/assets/3d61c68e-c519-4b38-bd76-0d7ace0da1e6" />
+
+click on Add AWS resources and add ALB
+
+<img width="519" height="251" alt="image" src="https://github.com/user-attachments/assets/749364c3-14e8-40f1-b829-2cebf2e37213" />
+
+<img width="371" height="229" alt="image" src="https://github.com/user-attachments/assets/b8405d43-2e9d-412f-87f7-c5ffcdca245e" />
+
+<img width="530" height="224" alt="image" src="https://github.com/user-attachments/assets/0bcb7d88-1508-4cca-8183-93ea8cb1c5c6" />
+
+<img width="416" height="199" alt="image" src="https://github.com/user-attachments/assets/75591794-a186-4f4d-bac7-134b4bd9e143" />
+
+<img width="283" height="240" alt="image" src="https://github.com/user-attachments/assets/b65c4456-aeb4-414f-9de8-853dd80d400f" />
+
+<img width="300" height="185" alt="image" src="https://github.com/user-attachments/assets/3bd6fe94-135f-4d53-b4e8-d3ed5cec909d" />
+
+click next
+<img width="303" height="210" alt="image" src="https://github.com/user-attachments/assets/12218f9c-ccee-4a96-bc2c-7878849f6e81" />
+
+click next and then go with default things 
+<img width="436" height="210" alt="image" src="https://github.com/user-attachments/assets/b1f720d5-b6c9-45c7-ad09-33c254946505" />
+
+<img width="433" height="246" alt="image" src="https://github.com/user-attachments/assets/8b65adfe-8c69-4547-b46a-92ef1c76cb54" />
+
+Now open the ALB url and access the application. It wont open as we blocked our laptop IP.
+
+<img width="420" height="113" alt="image" src="https://github.com/user-attachments/assets/da6330f9-32ab-40c8-abed-e2f25ce3e800" />
 
 
 
