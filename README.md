@@ -215,6 +215,23 @@ create NLB: choose nlb here
 
 
 ### Gateway load balancer glb:
+glb works on GENEVE protocol and port is 6081. It does not work with http, tcp, udp etc. glb works on layer 3
+
+
+<img width="512" height="302" alt="image" src="https://github.com/user-attachments/assets/1bdc8585-a506-40a9-8808-410e1372fcee" />
+
+
+
+glb is like to inspect/validate the incoming and outgoing requests. Here we are creating 2 VPCs. Course VPC and Security VPC.
+
+In security VPC we have only private subnet and no internet gateway. But for demo purpose, we are using internet gateway in security VPC.
+
+Also we create a target group in securiy VPC and glb will target to that target group. An ec2 will be placed to the target group.
+
+
+<img width="569" height="276" alt="image" src="https://github.com/user-attachments/assets/837b295e-3b33-41bc-8da7-7451e430259b" />
+
+
 
 
 
