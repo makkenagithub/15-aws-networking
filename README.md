@@ -270,8 +270,24 @@ Give the Course VPC and its subnets, then create end point.
 
 <img width="554" height="240" alt="image" src="https://github.com/user-attachments/assets/9dcf202e-a23b-4ddf-a954-bc6dafc9a9b2" />
 
+IMPORTANT THING is WE NEED TO UPDATE ROUTE TABLE OF PRIVATE SUBNET in course VPC with the VPC END POINT. Then the flow will be 
 
+ec2 in private subnet course VPC -> route table -> VPC end point -> VPC endpint service -> glb -> target group -> ec2
 
+Here we are updating route table with all traffic 0.0.0.0/0 wih vpc endpoint. vpc endpoint option is coming with gateway load balancer endpoint option , observe
+
+<img width="539" height="230" alt="image" src="https://github.com/user-attachments/assets/9059cad9-2833-4323-8b42-770c7b77bc89" />
+
+Now the all the flow are enables.
+
+Verify:
+
+login to ec2 in security VPC and run TCP dump commad and see IP of ec2 in course VPC.
+
+```
+sudo tcpdump -nvv 'port 6081'
+```
+<img width="488" height="159" alt="image" src="https://github.com/user-attachments/assets/15c99a5f-f50b-411c-8e12-5f31115b83ff" />
 
 
 
