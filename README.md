@@ -226,10 +226,16 @@ glb is like to inspect/validate the incoming and outgoing requests. Here we are 
 
 In security VPC we have only private subnet and no internet gateway. But for demo purpose, we are using internet gateway in security VPC.
 
-Also we create a target group in securiy VPC and glb will target to that target group. An ec2 will be placed to the target group.
+Also we create a target group in securiy VPC and glb will target to that target group. An ec2 will be placed to the target group. Choose this target group while creating glb
 
 
 <img width="569" height="276" alt="image" src="https://github.com/user-attachments/assets/837b295e-3b33-41bc-8da7-7451e430259b" />
+
+
+<img width="536" height="264" alt="image" src="https://github.com/user-attachments/assets/0fe89759-98f8-453a-8eb0-b272a866d314" />
+
+
+Now both the VPCs and glb are created. But both are independent , we need to enable the traffic flow between them. For that we need to enable cross VPC communication.  we need to use VPC end point and VPC end point service.
 
 
 
