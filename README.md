@@ -244,7 +244,7 @@ EC2 in cource VPC -> route table -> vpc end point -> vpc endpoint service -> glb
 <img width="521" height="304" alt="image" src="https://github.com/user-attachments/assets/db823de2-78a5-4424-8b19-f2762332eba5" />
 
 
-VPC endpoint service:
+VPC endpoint service: I observe, we mention glb here. And no option to mention security VPC.
 
 <img width="584" height="304" alt="image" src="https://github.com/user-attachments/assets/aa701082-9e2c-4747-b471-2d589140ecd7" />
 
@@ -265,6 +265,13 @@ VPC Endpoint :
 Provide the vpc endpoint service name here and verify. Then select the course VPC 
 
 <img width="474" height="130" alt="image" src="https://github.com/user-attachments/assets/2155ff3a-2186-4b36-9b86-5f48e8be6709" />
+
+Give the Course VPC and its subnets, then create end point.
+
+<img width="554" height="240" alt="image" src="https://github.com/user-attachments/assets/9dcf202e-a23b-4ddf-a954-bc6dafc9a9b2" />
+
+
+
 
 
 
