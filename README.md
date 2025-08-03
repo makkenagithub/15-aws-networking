@@ -291,6 +291,10 @@ sudo tcpdump -nvv 'port 6081'
 
 
 
+### AWS WAF and Shield
+
+<img width="531" height="300" alt="image" src="https://github.com/user-attachments/assets/9a8d9342-67f3-4c62-9bd9-96fc4996d7dc" />
+
 
 
 
