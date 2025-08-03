@@ -237,6 +237,21 @@ Also we create a target group in securiy VPC and glb will target to that target 
 
 Now both the VPCs and glb are created. But both are independent , we need to enable the traffic flow between them. For that we need to enable cross VPC communication.  we need to use VPC end point and VPC end point service.
 
+VPC endpoint service is created for glb in security VPC. Similarly VPC end point is created in course VPC. So VPC end point point to VPC end point service. FLow is as follows
+
+EC2 in cource VPC -> route table -> vpc end point -> vpc endpoint service -> glb -> applications ec2.
+
+<img width="521" height="304" alt="image" src="https://github.com/user-attachments/assets/db823de2-78a5-4424-8b19-f2762332eba5" />
+
+
+<img width="584" height="304" alt="image" src="https://github.com/user-attachments/assets/aa701082-9e2c-4747-b471-2d589140ecd7" />
+
+
+<img width="502" height="134" alt="image" src="https://github.com/user-attachments/assets/85282836-71ad-417b-83ef-0f34077086e3" />
+
+cross region also supported.
+
+<img width="544" height="203" alt="image" src="https://github.com/user-attachments/assets/b64594d3-02d8-42a7-97ee-03e737956998" />
 
 
 
