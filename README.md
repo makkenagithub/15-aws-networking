@@ -346,3 +346,11 @@ Now open the ALB url and access the application. It wont open as we blocked our 
 
 
 
+### AWS Global accelerator:
+For eg: application is running in mumbai and frankfurt regoins. Now if the user request comes from Europe, then the user request is served from nearest location to the user using AWS global accelerator. AWS global accelerator redirects the user requst to nearest location and helps in reducing latency and serves the user request in quick time.
+
+<img width="548" height="298" alt="image" src="https://github.com/user-attachments/assets/ed999eac-b96e-4629-9495-207f981b59ac" />
+
+Here we are creating a VPC in mumbai and another VPC in Frankfurt. And all the VPC internal componenets such as as subnets, routes, internet gateway, ALBs, target groups are created.
+
+
