@@ -355,5 +355,49 @@ Here we are creating a VPC in mumbai and another VPC in Frankfurt. And all the V
 
 <img width="499" height="298" alt="image" src="https://github.com/user-attachments/assets/853e99a3-9763-4e63-904c-4a82c7221447" />
 
+Global accelerator will route the user request to concerned ALB based on geo location. 
+
+Create Global accelerator:
+
+Global accelarator is a global resource. It does not matter in which region you are in.
+
+<img width="551" height="277" alt="image" src="https://github.com/user-attachments/assets/680eb76d-2cf8-4f8e-9f18-034a2e66f8d1" />
+
+Application Aapache is installed on target group ec2 instances. It runs on port 80. So we enabled port 80 in target group, ec2 security group, ALB security group. 
+
+So in global accelerator also we are giving same port as below
+
+<img width="542" height="213" alt="image" src="https://github.com/user-attachments/assets/bc32b5f6-4ead-4a0a-8422-b8a15fd5e05c" />
+
+Add end point gorups as the two regions where the ALB is added i.e. mumbai and frankfurt
+
+<img width="566" height="267" alt="image" src="https://github.com/user-attachments/assets/ac9c1e8d-7caa-4922-84a9-703ffeb4aa18" />
+
+Then add endpoints as ALB
+
+<img width="569" height="256" alt="image" src="https://github.com/user-attachments/assets/a8ab914e-cba9-402c-824d-b0ed3656cf39" />
+
+endpoint 1 from mumbai
+
+<img width="419" height="186" alt="image" src="https://github.com/user-attachments/assets/1b7f3e11-e548-4126-9e62-fc1a902ae977" />
+
+end point 2 from frankfurt
+
+<img width="445" height="215" alt="image" src="https://github.com/user-attachments/assets/e964df93-9a12-4bc4-8dea-8cdada5b5bc8" />
+
+<img width="566" height="225" alt="image" src="https://github.com/user-attachments/assets/781df271-2cdf-4816-91b9-52d73c976a04" />
+
+We see DNS name for global accelerator
+
+<img width="541" height="256" alt="image" src="https://github.com/user-attachments/assets/e900c1ed-2b80-48ab-9de6-a4ce17aa28eb" />
+
+So when we open the DNS of global accelerator, then the request goes to ALB which nearer to you. 
+
+On the above we get few IPs , these are associated with global accelerator.
+
+
+
+
+
 
 
