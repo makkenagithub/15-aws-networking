@@ -353,4 +353,7 @@ For eg: application is running in mumbai and frankfurt regoins. Now if the user 
 
 Here we are creating a VPC in mumbai and another VPC in Frankfurt. And all the VPC internal componenets such as as subnets, routes, internet gateway, ALBs, target groups are created.
 
+<img width="499" height="298" alt="image" src="https://github.com/user-attachments/assets/853e99a3-9763-4e63-904c-4a82c7221447" />
+
+
 
