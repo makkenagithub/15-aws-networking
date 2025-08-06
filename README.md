@@ -501,6 +501,65 @@ When a request to primary ALB fails, then that request will goto secondary ALB.
 
 
 
+### ACM aws certificate manager
+
+To make our url secure, we need https. So we generate certificate from ACM and update those certificate records in route 53 and make url as https.
+
+<img width="508" height="292" alt="image" src="https://github.com/user-attachments/assets/05b6c035-e627-4f6d-a86b-df67e705e9d2" />
+
+<img width="517" height="257" alt="image" src="https://github.com/user-attachments/assets/16a8785a-1dc6-40c0-9e95-1f4d8f7df4ae" />
+
+Since our url is in public area , choose public certificate.
+
+<img width="530" height="232" alt="image" src="https://github.com/user-attachments/assets/adf1455e-7378-4527-bca8-49cacec4cac4" />
+
+<img width="549" height="280" alt="image" src="https://github.com/user-attachments/assets/670f2dcb-f753-48bb-afe5-cc57430ee64a" />
+
+<img width="547" height="236" alt="image" src="https://github.com/user-attachments/assets/a49a1296-9b52-4ebb-a770-5870d16f17e0" />
+
+It shows cert validation pending. Now click on the cert and click on create records in Route 53
+
+<img width="535" height="272" alt="image" src="https://github.com/user-attachments/assets/26747a28-d18e-48fa-bda0-205020b8d00b" />
+
+<img width="545" height="252" alt="image" src="https://github.com/user-attachments/assets/cbd24109-6f0c-4a38-ad81-0ef5b5ccb097" />
+
+<img width="527" height="259" alt="image" src="https://github.com/user-attachments/assets/8c0b57ba-f552-4633-9f0b-ff6caf751886" />
+
+Now goto route53 and see records and observe CNAME record added
+
+<img width="521" height="256" alt="image" src="https://github.com/user-attachments/assets/9431e5ef-e06d-4eaf-9826-c5cd75a608b4" />
+
+Ensure ALB listener rule is added with HTTPS:443 ANd also , here in listener rule, we need to update secure listener settings with the certificate from the dropdown 
+
+<img width="554" height="281" alt="image" src="https://github.com/user-attachments/assets/148c3daf-9ff6-42ed-b5ee-fe8a8907941e" />
+
+<img width="566" height="281" alt="image" src="https://github.com/user-attachments/assets/7f8ae834-6720-4c2b-ab3b-496185697abb" />
+
+<img width="374" height="218" alt="image" src="https://github.com/user-attachments/assets/2c85b6bf-5b0e-4540-8b7a-cca87eb09cee" />
+
+Also add sg rule for alb sg group with https:443 port
+
+Now the url works with http and https. But If a request comes with http then we need to redirect to https. For that goto ALB listener rule of HTTP:80 and edit, and see redirect to url option instead of tragte group
+
+<img width="541" height="272" alt="image" src="https://github.com/user-attachments/assets/d469136b-a521-43af-96fa-c8074e1f45b5" />
+
+<img width="437" height="259" alt="image" src="https://github.com/user-attachments/assets/93617784-c9b1-4039-9830-2241784e08ee" />
+
+
+
+### AWS WAN
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
