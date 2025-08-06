@@ -417,7 +417,7 @@ These name servers needs to be updated in the settings of where we purchased the
 <img width="358" height="204" alt="image" src="https://github.com/user-attachments/assets/eaa52c2b-eae2-4c10-b0af-8886914f4096" />
 
 
-A record:
+A record for IP:
 
 <img width="529" height="260" alt="image" src="https://github.com/user-attachments/assets/330b9cb9-b6d0-406f-8a98-34305385c09f" />
 
@@ -435,6 +435,38 @@ enter public IP of ec2.
 
 
 But in reality, we do not use A record, as IP changes frequently. So we use LB.
+
+A record for ALB:
+
+AWS route 53 -> hosted zone -> create record -> A record -> choose alias for APP or classic LB and its region, as below and select ALB url
+
+<img width="264" height="284" alt="image" src="https://github.com/user-attachments/assets/9e7b3228-fd6d-479e-95b5-8ffe8bc118e1" />
+
+<img width="521" height="196" alt="image" src="https://github.com/user-attachments/assets/b4183a34-4409-4a92-b4c3-a8d1bf71f2cc" />
+
+
+Weighted Routing:
+
+<img width="352" height="181" alt="image" src="https://github.com/user-attachments/assets/cc612b07-6010-492a-8b3a-04986f956182" />
+
+Here we created 2 VPCs and its internal components. And 2 ALBs. One ALB can point to one VPC , similarly second one.
+
+Choose weighted routing
+
+<img width="500" height="241" alt="image" src="https://github.com/user-attachments/assets/8e4d804e-c420-4b1f-afb5-966d2f2689f4" />
+
+<img width="356" height="267" alt="image" src="https://github.com/user-attachments/assets/9c632622-09b6-497d-aa38-4c17fd1edc4c" />
+
+<img width="373" height="227" alt="image" src="https://github.com/user-attachments/assets/d9f5f070-59f5-4f73-9e6e-f7ca70d9b70a" />
+
+weight is allowed between 0 to 255. Create 2 weighted records with weight of 128 each. Choose A record, ALB, its region and alb url
+
+<img width="268" height="287" alt="image" src="https://github.com/user-attachments/assets/9ffe5964-5fc6-41ac-9705-73b5ef4c14b5" />
+
+<img width="401" height="228" alt="image" src="https://github.com/user-attachments/assets/4285a5bc-de4f-4158-a2dc-cb32ec8d5ab2" />
+
+
+
 
 
 
