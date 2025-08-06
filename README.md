@@ -396,6 +396,45 @@ So when we open the DNS of global accelerator, then the request goes to ALB whic
 On the above we get few IPs , these are associated with global accelerator.
 
 
+### Route53
+
+NS - Name servers , which will help in resolving the DNS.
+A record - we provide the IP here, in which application is running
+CNAME - another domain redirect
+
+First we need to purchase a domain from domain registrar and then we need to create a hosted zone in aws.
+
+hosted zone:
+
+<img width="543" height="278" alt="image" src="https://github.com/user-attachments/assets/81bbd636-875e-449e-98da-9aa5c9e75829" />
+
+As soon as we create a hosted zone with our own domain name, then it provides name servers and SOA as below
+
+<img width="542" height="277" alt="image" src="https://github.com/user-attachments/assets/31a34292-7cf3-47ef-b6ad-d0698c1c0233" />
+
+These name servers needs to be updated in the settings of where we purchased the domain. So that whenever user hits the url, then request goes to domanin -> hostedzone name servers.
+
+<img width="358" height="204" alt="image" src="https://github.com/user-attachments/assets/eaa52c2b-eae2-4c10-b0af-8886914f4096" />
+
+
+A record:
+
+<img width="529" height="260" alt="image" src="https://github.com/user-attachments/assets/330b9cb9-b6d0-406f-8a98-34305385c09f" />
+
+choose simple routin now and see we have different options of routing policy, weighted, geo location, failover etc.
+
+<img width="495" height="229" alt="image" src="https://github.com/user-attachments/assets/8b0db213-a1c1-4137-aefb-707b5ed6effb" />
+
+enter public IP of ec2.
+
+<img width="283" height="293" alt="image" src="https://github.com/user-attachments/assets/c67e4d90-4358-4429-a662-a6537cb402a2" />
+
+<img width="495" height="188" alt="image" src="https://github.com/user-attachments/assets/d6f85675-af0f-407b-bdc0-339ad6f334ad" />
+
+<img width="524" height="226" alt="image" src="https://github.com/user-attachments/assets/44e7a99c-5ea3-48ce-9c4f-d9b757939c99" />
+
+
+But in reality, we do not use A record, as IP changes frequently. So we use LB.
 
 
 
