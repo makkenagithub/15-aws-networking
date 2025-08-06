@@ -466,6 +466,18 @@ weight is allowed between 0 to 255. Create 2 weighted records with weight of 128
 <img width="401" height="228" alt="image" src="https://github.com/user-attachments/assets/4285a5bc-de4f-4158-a2dc-cb32ec8d5ab2" />
 
 
+Geo location routing:
+
+<img width="457" height="226" alt="image" src="https://github.com/user-attachments/assets/06f6ce9a-440d-4b50-ac9c-5646e41f05da" />
+
+<img width="374" height="223" alt="image" src="https://github.com/user-attachments/assets/8cf96c64-6745-453c-a8e4-a3ac2790e69c" />
+
+If the request comes from sweden then route the request to an ALB in Frankfurt and  if the request comes form Finalnd then route to another ALB
+
+<img width="284" height="289" alt="image" src="https://github.com/user-attachments/assets/1a35f287-b719-4573-a914-2304a404c2bf" />
+
+<img width="272" height="286" alt="image" src="https://github.com/user-attachments/assets/a2a04f55-6c2e-433d-ab09-011bbb742d25" />
+
 
 
 
