@@ -468,6 +468,8 @@ weight is allowed between 0 to 255. Create 2 weighted records with weight of 128
 
 Geo location routing:
 
+<img width="360" height="203" alt="image" src="https://github.com/user-attachments/assets/1e76f491-0620-4fe5-a133-5d1e8cd75ea6" />
+
 <img width="457" height="226" alt="image" src="https://github.com/user-attachments/assets/06f6ce9a-440d-4b50-ac9c-5646e41f05da" />
 
 <img width="374" height="223" alt="image" src="https://github.com/user-attachments/assets/8cf96c64-6745-453c-a8e4-a3ac2790e69c" />
@@ -477,6 +479,27 @@ If the request comes from sweden then route the request to an ALB in Frankfurt a
 <img width="284" height="289" alt="image" src="https://github.com/user-attachments/assets/1a35f287-b719-4573-a914-2304a404c2bf" />
 
 <img width="272" height="286" alt="image" src="https://github.com/user-attachments/assets/a2a04f55-6c2e-433d-ab09-011bbb742d25" />
+
+<img width="389" height="185" alt="image" src="https://github.com/user-attachments/assets/6521960c-a4ed-4260-a3da-630a784e499b" />
+
+
+Failover Routing:
+
+When a request to primary ALB fails, then that request will goto secondary ALB.
+
+<img width="362" height="205" alt="image" src="https://github.com/user-attachments/assets/23cebd28-3c44-47bd-aa95-47148007e536" />
+
+<img width="374" height="206" alt="image" src="https://github.com/user-attachments/assets/578942f3-56fd-4568-b467-db2cf65fe7c0" />
+
+<img width="369" height="247" alt="image" src="https://github.com/user-attachments/assets/b144fbfa-a0a9-438d-88ad-c3a931925b86" />
+
+<img width="293" height="262" alt="image" src="https://github.com/user-attachments/assets/296070ef-3071-4948-a7e9-b69ba31d20af" />
+
+<img width="285" height="272" alt="image" src="https://github.com/user-attachments/assets/e8012605-21b7-4ff9-b170-e77ad5063fbb" />
+
+<img width="401" height="224" alt="image" src="https://github.com/user-attachments/assets/6c81437f-1a32-4a14-861d-24b131fdf389" />
+
+
 
 
 
