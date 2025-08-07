@@ -626,15 +626,26 @@ Then click on Attchemnt policies:
 
 <img width="438" height="197" alt="image" src="https://github.com/user-attachments/assets/c3083cc6-d43c-4cea-9fa1-c97d54404007" />
 
-When this tag value matches, the automatically attches to the segment. Similarly attch policy to prod.
+When this tag value matches, the automatically attches to the segment. Similarly attch policy to prod , give rule number 2.
 
 <img width="371" height="203" alt="image" src="https://github.com/user-attachments/assets/8efb92d1-79ec-4252-82e6-b41088333303" />
 
 <img width="366" height="200" alt="image" src="https://github.com/user-attachments/assets/f7562a03-c7e4-4fd6-a8b9-adfb532b36f2" />
 
 
+Similarly do for shared , give rule number 100. Here in this policy we are allowing any. If any other policy conditions does not match , then its attched to this segment.
 
 <img width="390" height="209" alt="image" src="https://github.com/user-attachments/assets/9eeb904d-d650-4971-88c9-b0be66916ef3" />
+
+<img width="431" height="211" alt="image" src="https://github.com/user-attachments/assets/41e2500a-f1a9-4a7e-82ee-5099d55b8927" />
+
+<img width="364" height="134" alt="image" src="https://github.com/user-attachments/assets/62220719-7410-42da-a442-19f0aa8dc203" />
+
+Then select ploicy 3 and click view and change set and apply it
+
+<img width="345" height="146" alt="image" src="https://github.com/user-attachments/assets/89755fdf-54ac-49ba-89ea-61414eb5a1fa" />
+
+
 
 
 
