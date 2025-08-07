@@ -646,6 +646,16 @@ Then select ploicy 3 and click view and change set and apply it
 <img width="345" height="146" alt="image" src="https://github.com/user-attachments/assets/89755fdf-54ac-49ba-89ea-61414eb5a1fa" />
 
 
+Attchment with VPC:
+
+<img width="464" height="173" alt="image" src="https://github.com/user-attachments/assets/558cfb46-ff53-48f2-9c8b-e2aabbd9111f" />
+
+<img width="323" height="230" alt="image" src="https://github.com/user-attachments/assets/92698448-440d-46bd-8d36-f071ee6a2030" />
+
+<img width="292" height="219" alt="image" src="https://github.com/user-attachments/assets/10ba6e4c-f8e0-401a-a78e-e6b3ed3047d4" />
+
+
+
 
 
 
