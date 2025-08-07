@@ -549,6 +549,79 @@ Now the url works with http and https. But If a request comes with http then we 
 
 ### AWS WAN
 
+<img width="462" height="263" alt="image" src="https://github.com/user-attachments/assets/4aeac837-292b-43a1-9c4b-89c63164ff17" />
+
+In this we craeted 3 VPCs in different regions Frankfurt, stockholm, mumbai. Each VPC has 3 public subnets, 3 private subnets.
+
+Create global network first: Create global network for 3 regions
+
+Aws console -> network manager -> global networks -> ceate global network 
+
+<img width="452" height="245" alt="image" src="https://github.com/user-attachments/assets/ad17ae92-8847-490b-89d0-3dddb815b91e" />
+
+Choose 3 regions and We are creating shared segment here
+
+<img width="458" height="235" alt="image" src="https://github.com/user-attachments/assets/b99ea210-6be6-47f4-b079-8d8c4480cde2" />
+
+<img width="449" height="146" alt="image" src="https://github.com/user-attachments/assets/294edad2-d151-4d64-9dfa-9222342e2173" />
+
+After creating global network, a core network is created automatically as part of global network. And a policy version also created internally in core network.
+
+Setup dev and production segments:
+
+click on the created global network and click on core network on the left side
+
+<img width="473" height="183" alt="image" src="https://github.com/user-attachments/assets/a78dfe28-8d23-4f1a-b20d-d76cf213bf0d" />
+
+<img width="474" height="216" alt="image" src="https://github.com/user-attachments/assets/8dc175c4-79a5-487e-ad47-edd5bdf205a5" />
+
+click on policy version and see a policy version already created while creating global network
+
+<img width="462" height="159" alt="image" src="https://github.com/user-attachments/assets/c12dc065-8b56-4e9f-9ba2-f4faa77e898f" />
+
+click on edit and add dev and prod segments
+
+<img width="481" height="205" alt="image" src="https://github.com/user-attachments/assets/43064aac-737d-4bc5-9bc5-43135645a105" />
+
+<img width="459" height="235" alt="image" src="https://github.com/user-attachments/assets/4fbf5488-176a-41ce-94ea-de05672e107d" />
+
+<img width="314" height="208" alt="image" src="https://github.com/user-attachments/assets/28218631-66b5-43f0-b8ab-d595b57f191e" />
+
+<img width="481" height="242" alt="image" src="https://github.com/user-attachments/assets/dc84c59a-aa34-4366-a282-a8b70eb98126" />
+
+Now the policy version 2 is created
+
+<img width="485" height="210" alt="image" src="https://github.com/user-attachments/assets/f7d381f9-4ad0-4625-8e3f-b72361947c86" />
+
+select policy 2 and click on view and apply change set
+
+<img width="471" height="173" alt="image" src="https://github.com/user-attachments/assets/f7582f38-7178-4c09-b6b7-34b1264d1e78" />
+
+<img width="472" height="215" alt="image" src="https://github.com/user-attachments/assets/0503899a-0f71-4c0c-8f5d-f4a3d2166d65" />
+
+<img width="479" height="137" alt="image" src="https://github.com/user-attachments/assets/226ef9a4-c8ca-441a-9ef8-e39913ab26ab" />
+
+
+Create segment action and routing:
+
+Here our ground rule is Dev can be accessable from shared, prod can be accessable from shared. Shared can access both dev and prod.
+
+select on ploicy2 - > view and apply change set -> edit -> segment -> dev -> edit 
+
+<img width="296" height="221" alt="image" src="https://github.com/user-attachments/assets/7bdbc628-b803-4417-a5ff-9e8769dbe014" />
+
+similarly edit prod segment , then edit shared segment
+
+<img width="446" height="227" alt="image" src="https://github.com/user-attachments/assets/e182c166-0c12-4c41-aa22-088269e97fbf" />
+
+Next click on segment action and do similar setup
+
+<img width="449" height="178" alt="image" src="https://github.com/user-attachments/assets/21a7d0e0-f68a-4710-b052-80cacee19c8b" />
+
+<img width="449" height="138" alt="image" src="https://github.com/user-attachments/assets/3faa37d2-badb-489a-b2cd-c57e6ab05fd5" />
+
+Then click on Attchemnt policies:
+
 
 
 
