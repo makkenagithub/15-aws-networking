@@ -628,6 +628,8 @@ Then click on Attchemnt policies:
 
 When this tag value matches, the automatically attches to the segment. Similarly attch policy to prod , give rule number 2.
 
+Same tag values we will give in attching VPC section. It needs to be matched, so that VPCs are attached to the segments.
+
 <img width="371" height="203" alt="image" src="https://github.com/user-attachments/assets/8efb92d1-79ec-4252-82e6-b41088333303" />
 
 <img width="366" height="200" alt="image" src="https://github.com/user-attachments/assets/f7562a03-c7e4-4fd6-a8b9-adfb532b36f2" />
@@ -654,7 +656,51 @@ Attchment with VPC:
 
 <img width="292" height="219" alt="image" src="https://github.com/user-attachments/assets/10ba6e4c-f8e0-401a-a78e-e6b3ed3047d4" />
 
+Ensure TAG values matched with the values given in Attch policies section.
 
+<img width="302" height="178" alt="image" src="https://github.com/user-attachments/assets/49d79273-4e42-4619-9ba6-e25b0d5b5f4b" />
+
+Similarly create VPC attachment for prodcution.
+
+Similarly create VPC attachment to shared. Here for shared we did not give any TAG, so leave it. 
+
+<img width="468" height="165" alt="image" src="https://github.com/user-attachments/assets/ead965ac-643a-46a6-abd1-86f0fd3bb9e2" />
+
+<img width="377" height="149" alt="image" src="https://github.com/user-attachments/assets/02eb7ee1-36c0-4243-82b5-2f0dd71a5a47" />
+
+
+See Routes : Very helpful in troubleshooting
+
+Core network -> routes -> 
+
+<img width="461" height="181" alt="image" src="https://github.com/user-attachments/assets/11013f3f-c623-4133-ba23-d74628a800fe" />
+
+<img width="491" height="233" alt="image" src="https://github.com/user-attachments/assets/c1626ac9-422e-4921-9f9c-36e90c5ad233" />
+
+
+Update Route tables in VPCs:
+
+Our requirement is dev (frankfurt) can communicate with shared(mumbai). prod(stockholm) can comminicate with shared(mumbai). Shared(mumbai) communicate with both dev and prod.
+
+<img width="475" height="290" alt="image" src="https://github.com/user-attachments/assets/5b8f8686-2ed5-40d7-be58-8a43f7fad1f0" />
+
+Choose core network while adding route. Here both production cidr and shared cidr are added in prod VPC subnet routing. Do for all subnets in prod VPC.
+
+prod vpc routes:
+<img width="461" height="239" alt="image" src="https://github.com/user-attachments/assets/cc9a8021-d77f-43f3-9765-72e0a034c3ff" />
+
+similarly perform for dve and shared VPC subnets.
+
+shared vpc routes:
+<img width="447" height="228" alt="image" src="https://github.com/user-attachments/assets/2688e17b-13dc-44d9-91af-3800cb664421" />
+
+dev vpc routes:
+<img width="468" height="260" alt="image" src="https://github.com/user-attachments/assets/393c85ef-399d-4a4b-8c0f-1acbebef6228" />
+
+
+Test WAN setup:
+
+TO test create EC2 in each vpc. And try to ping other ec2 IPs. Dev communicate with shared. Prod communicate with shared. Shared communicate with both others. 
 
 
 
