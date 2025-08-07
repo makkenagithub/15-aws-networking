@@ -622,6 +622,20 @@ Next click on segment action and do similar setup
 
 Then click on Attchemnt policies:
 
+<img width="375" height="212" alt="image" src="https://github.com/user-attachments/assets/a289fb22-148c-4a9a-bc58-a077d3e6ad10" />
+
+<img width="438" height="197" alt="image" src="https://github.com/user-attachments/assets/c3083cc6-d43c-4cea-9fa1-c97d54404007" />
+
+When this tag value matches, the automatically attches to the segment. Similarly attch policy to prod.
+
+<img width="371" height="203" alt="image" src="https://github.com/user-attachments/assets/8efb92d1-79ec-4252-82e6-b41088333303" />
+
+<img width="366" height="200" alt="image" src="https://github.com/user-attachments/assets/f7562a03-c7e4-4fd6-a8b9-adfb532b36f2" />
+
+
+
+<img width="390" height="209" alt="image" src="https://github.com/user-attachments/assets/9eeb904d-d650-4971-88c9-b0be66916ef3" />
+
 
 
 
